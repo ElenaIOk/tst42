@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
     <body>
         <h1>CatPhotoApp</h2>
         <main>
@@ -9,20 +12,37 @@
                 <a href="#" target="_blank">cat photos</a>.</p>
             <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
             <h3>Cat lists</h3>
-            <p>Things cats love:</p>
-            <ul>
-                <li>catnip</li>
-                <li>laser pointers</li>
-                <li>canned tuna</li>
-            </ul>
-            <img src="/imgs/canned_tuna.jpg" alt="Canned tuna">
-            <p>Things cats hate:</p>
-            <ol>
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
-            <img src="/imgs/cats.jpg" alt="Cats">
+            <div class="lists">
+                <p>Things cats <em>love</em>:</p>
+                <ul>
+                    <li>catnip</li>
+                    <li>laser pointers</li>
+                    <li>canned tuna</li>
+                </ul>
+                <figure>
+                <img src="/imgs/canned_tuna.jpg" alt="Canned tuna">
+                <figcaption>Cats <em>love</em> tuna</figcaption>
+                </figure>
+                <p>Things cats <strong>hate</strong>:</p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <img src="/imgs/cats.jpg" alt="Cats">
+            </div>
+                <form action="/submit-cat-photo">
+                <label for="indoor"><input id="indoor" type="radio" name="door" checked> indoor</label><br>
+                <label for="outdoor"><input id="outdoor" type="radio" name="door"> outdoor</label><br>
+                <label for="loving"><input id="loving" type="checkbox" name="pers"> loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="pers" checked> lazy</label><br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="pers"> energetic</label><br>
+                <input type="text" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
         </main>
+        <footer>
+            <p><small>No Copyright - <a href="http://freecodecamp.org" target="_blank">Free Code Camp</a></small></p>
+        </footer>
     </body>
 </html>
